@@ -9,6 +9,7 @@ public class homeWorkApp {
         printThreeWords();
         checkSumSign();
         printColor();
+        compareNumbers();
     }
 
     /**
@@ -47,13 +48,22 @@ public class homeWorkApp {
      */
     public static void printColor() {
         int value = 11;
-        if (value <= 0)
-
-        System.out.println("red");
-        if (value > 0 && 100 >= value)
-        System.out.println("yellow");
-        if (value > 101)
-        System.out.println("green");
+        if (value <= 0) System.out.println("red");
+        if (value > 0 && 100 >= value) System.out.println("yellow");
+        if (value > 101) System.out.println("green");
     }
+
+    /**
+     * 5. Создайте метод compareNumbers(), в теле которого объявите две int переменные a и b, и
+     * инициализируйте их любыми значениями, которыми захотите. Если a больше или равно b, то
+     * необходимо вывести в консоль сообщение “a >= b”, в противном случае “a < b”;
+     */
+    public static void compareNumbers() {
+        int a = 12;
+        int b = 32;
+        if (a >= b) System.out.println("a >= b");
+        else System.out.println("a < b");
+    }
+
 }
 
