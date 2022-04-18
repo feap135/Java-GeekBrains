@@ -8,6 +8,7 @@ public class homeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
+        printColor();
     }
 
     /**
@@ -26,16 +27,33 @@ public class homeWorkApp {
      * просуммировать эти переменные, и если их сумма больше или равна 0, то вывести в консоль
      * сообщение “Сумма положительная”, в противном случае - “Сумма отрицательная”;
      */
+
     public static void checkSumSign() {
         int a = 88;
         int b = 77;
         int c = a + b;
         if (c >= 0) {
             System.out.println("Сумма положительная");
-        }
-        else  {
+        } else {
             System.out.println("Сумма отрицательная");
         }
+    }
+
+    /**
+     * 4. Создайте метод printColor() в теле которого задайте int переменную value и инициализируйте
+     * ее любым значением. Если value меньше 0 (0 включительно), то в консоль метод должен
+     * вывести сообщение “Красный”, если лежит в пределах от 0 (0 исключительно) до 100 (100
+     * включительно), то “Желтый”, если больше 100 (100 исключительно) - “Зеленый”;
+     */
+    public static void printColor() {
+        int value = 11;
+        if (value <= 0)
+
+        System.out.println("red");
+        if (value > 0 && 100 >= value)
+        System.out.println("yellow");
+        if (value > 101)
+        System.out.println("green");
     }
 }
 
