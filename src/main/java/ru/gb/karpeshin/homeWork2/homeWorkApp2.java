@@ -8,6 +8,8 @@ public class homeWorkApp2 {
         boolean f = checkPositiveOrNegative(10);  //№3
         System.out.println(f);
         printWordNTimes("word", 3);
+        boolean y = checkLeapYears(512);
+        System.out.println(y);
 
     }
 
@@ -43,5 +45,12 @@ public class homeWorkApp2 {
         for (int i = 0; i < h; i++) {
             System.out.println(word);
         }
+    }
+
+    /**
+     * 5. * Написать метод, который определяет, является ли год високосным, и возвращает boolean (високосный - true, не високосный - false). Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
+     */
+    public static boolean checkLeapYears(int y) { //№5
+        return ((y > 0) && (y % 4 == 0) && (y % 400 == 0) || (y % 100 != 0));
     }
 }
