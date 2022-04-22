@@ -7,6 +7,7 @@ public class homeWorkApp2 {
         System.out.println(e);
         boolean f = checkPositiveOrNegative(10);  //№3
         System.out.println(f);
+        printWordNTimes("word", 3);
 
     }
 
@@ -33,5 +34,14 @@ public class homeWorkApp2 {
      */
     public static boolean checkPositiveOrNegative(int f) { //№3
         return (f < 0);
+    }
+
+    /**
+     * 4. Написать метод, которому в качестве аргументов передается строка и число, метод должен отпечатать в консоль указанную строку, указанное количество раз;
+     */
+    public static void printWordNTimes(String word, int h) { //№4
+        for (int i = 0; i < h; i++) {
+            System.out.println(word);
+        }
     }
 }
