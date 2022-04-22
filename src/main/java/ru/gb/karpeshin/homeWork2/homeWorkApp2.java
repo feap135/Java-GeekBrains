@@ -3,6 +3,8 @@ package ru.gb.karpeshin.homeWork2;
 public class homeWorkApp2 {
     public static void main(String[] args) {
         within10and20(1, 5);
+        String e = checkNumber(-1);
+        System.out.println(e);
 
     }
 
@@ -12,7 +14,15 @@ public class homeWorkApp2 {
     public static boolean within10and20(int x1, int x2) {
         int c = x1 + x2;
         return (10 <= c && c <= 20);
-
     }
 
+    /**
+     * 2. Написать метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль, положительное ли число передали или отрицательное. Замечание: ноль считаем положительным числом.
+     */
+    public static String checkNumber(int e) {
+        if (e >= 0)
+            return "Положительное число";
+        else
+            return "Отрицательное число";
+    }
 }
